@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #12171b;" stylesheets="@visualFlourish.css">
+      <children>
+         <HBox prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: #100F10;">
+            <children>
+               <Button fx:id="newEvent" alignment="BOTTOM_CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #100F10;" stylesheets="@visualFlourish.css" text="New Event" textFill="WHITE" underline="true" />
+               <Button fx:id="newTask" alignment="BOTTOM_CENTER" mnemonicParsing="false" style="-fx-background-color: #100F10;" stylesheets="@visualFlourish.css" text="New Task" textFill="WHITE" underline="true" />
+               <Button fx:id="newWeek" alignment="BOTTOM_LEFT" mnemonicParsing="false" style="-fx-background-color: #100F10;" stylesheets="@visualFlourish.css" text="New Week" textFill="WHITE" underline="true" />
+               <Button fx:id="save" alignment="BOTTOM_CENTER" mnemonicParsing="false" style="-fx-background-color: #100F10;" stylesheets="@visualFlourish.css" text="Save" textFill="WHITE" underline="true" />
+               <Button fx:id="open" alignment="BOTTOM_CENTER" mnemonicParsing="false" style="-fx-background-color: #100F10;" stylesheets="@visualFlourish.css" text="Open" textFill="WHITE" underline="true" />
+               <HBox prefHeight="30.0" prefWidth="500.0" />
+               <ChoiceBox fx:id="layout" prefWidth="150.0" style="-fx-background-color: #100F10; -fx-border-color: white;" stylesheets="@visualFlourish.css">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <HBox.margin>
+                     <Insets left="42.0" />
+                  </HBox.margin>
+               </ChoiceBox>
+            </children>
+         </HBox>
+         <HBox alignment="BOTTOM_CENTER" layoutY="30.0" prefHeight="65.0" prefWidth="1000.0" style="-fx-background-color: #12171b; -fx-border-color: black;">
+            <children>
+               <Label fx:id="weekName" alignment="BOTTOM_CENTER" prefHeight="54.0" prefWidth="770.0" text="weekName" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="36.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+         <HBox fx:id="allDays" layoutY="96.0" prefHeight="450.0" prefWidth="1000.0" style="-fx-background-color: #12171b;" stylesheets="@visualFlourish.css">
+            <children>
+               <VBox fx:id="sunday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Sunday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="sundayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="monday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Monday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="mondayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="tuesday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Tuesday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="tuesdayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="wednesday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Wednesday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="wednesdayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="thursday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Thursday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="thursdayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="friday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Friday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="fridayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+               <VBox fx:id="saturday" prefHeight="200.0" prefWidth="142.857">
+                  <children>
+                     <HBox prefHeight="30.0" prefWidth="114.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.857" text="Saturday" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold Italic" size="12.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <VBox fx:id="saturdayBullets" prefHeight="420.0" prefWidth="114.0" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_RIGHT" layoutY="546.0" prefHeight="55.0" prefWidth="1000.0" style="-fx-border-color: black; -fx-background-color: #100F10;">
+            <children>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label text="Max Tasks: " textFill="WHITE" />
+                     <Label text="Max Events: " textFill="WHITE" />
+                  </children>
+               </VBox>
+               <VBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="469.0">
+                  <children>
+                     <Label fx:id="displayMaxEvents" textFill="WHITE" />
+                     <Label fx:id="displayMaxTasks" textFill="WHITE" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="55.0" prefWidth="120.0">
+                  <children>
+                     <HBox prefHeight="61.0" prefWidth="100.0">
+                        <children>
+                           <Label alignment="CENTER" prefHeight="18.0" prefWidth="84.0" text="Total Events: " textFill="WHITE" />
+                           <Label fx:id="numEvents" text="Label" textFill="WHITE" />
+                        </children>
+                     </HBox>
+                     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
+                        <children>
+                           <Label alignment="CENTER" text="Total Tasks:    " textFill="WHITE" />
+                           <Label fx:id="numTasks" text="Label" textFill="WHITE" />
+                        </children>
+                        <opaqueInsets>
+                           <Insets />
+                        </opaqueInsets>
+                        <VBox.margin>
+                           <Insets bottom="10.0" />
+                        </VBox.margin>
+                     </HBox>
+                  </children>
+                  <padding>
+                     <Insets top="10.0" />
+                  </padding>
+               </VBox>
+               <ProgressBar fx:id="tasksCompleted" prefWidth="200.0" progress="0.0" style="-fx-background-color: #12171b; -fx-border-color: #12171b;">
+                  <HBox.margin>
+                     <Insets left="10.0" right="10.0" />
+                  </HBox.margin>
+               </ProgressBar>
+               <ImageView fitHeight="43.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@rotatedship.gif" />
+                  </image>
+               </ImageView>
+            </children>
+         </HBox>
+      </children></AnchorPane>
+</Scene>

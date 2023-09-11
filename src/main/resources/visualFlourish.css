@@ -1,0 +1,32 @@
+#allDays {
+    -fx-background-image: url("SolarSystem.jpg");
+}
+#newEvent {
+    background-color: red;
+    transition: 0.2s;
+}
+
+#newEvent:hover {
+    background-color: green;
+    transition: 0.2s;
+}
+
+#newTask:hover {
+    -fx-background-color: #12171b;
+}
+
+#newWeek:hover {
+    -fx-background-color: #12171b;
+}
+
+#save:hover {
+    -fx-background-color: #12171b;
+}
+
+#open:hover {
+    -fx-background-color: #12171b;
+}
+
+#layout:hover {
+    -fx-background-color: red;
+}
